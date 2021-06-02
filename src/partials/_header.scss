@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #272727;
+    /* box-shadow: 0px 5px #10b981; */
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    .container {
+        height: 70px;
+        position: relative;
+        .name {
+            font-weight: 600;
+            font-size: 1.8rem;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .initials {
+            display: none;
+            font-size: 3rem;
+            font-weight: 600;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+
+        .list-nav {
+            width: 45%;
+            text-transform: uppercase;
+            font-weight: 500;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .hamburger_menu {
+            margin-right: 10px;
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                cursor: pointer;
+            }
+            .line {
+                width: 25px;
+                height: 5px;
+                margin-top: 4px;
+                background-color: #10b981;
+            }
+            .lineb {
+                width: 25px;
+                height: 5px;
+                margin-top: 4px;
+                background-color: #3b82f6;
+            }
+        }
+    }
+    .sidebar {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 80%;
+        height: 100vh;
+        text-transform: uppercase;
+        background-color: #272727;
+        z-index: 1;
+        font-size: 1.4rem;
+        &.open {
+            display: block;
+        }
+
+        .list-sidebar {
+            height: 400px;
+            border-bottom: 5px solid #3b82f6;
+            font-weight: 600;
+        }
+    }
+}
