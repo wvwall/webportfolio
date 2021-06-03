@@ -23,16 +23,16 @@
         <nav class="navbar">
             <div class="container flex justify-between items-center">
                 <h1 class="name text-green-500">
-                    < Walter Velardo >
+                    > Walter Velardo <
                 </h1>
                 <h1 class="initials text-green-500">
-                    < wv >
+                     >WV<
                 </h1>
-                <ul class="list-nav flex justify-between">
-                    <li><a class="text-gray-50" href="#home">Home</a></li>
+                <ul class="list-nav flex justify-around">
+                    <li><a class="text-green-500 active" href="#home">Home</a></li>
                     <li><a class="text-green-500" href="#about">Su di me</a></li>
-                    <li><a class="text-green-500" href="">Progetti</a></li>
-                    <li><a class="text-green-500" href="">Contatti</a></li>
+                    <li><a class="text-green-500" href="#project">Progetti</a></li>
+                    <li><a class="text-green-500" href="#contact">Contatti</a></li>
                 </ul>
                 <div class="hamburger_menu">
                     <div class="line"></div>
@@ -43,10 +43,10 @@
             </div>
             <div class="sidebar ">
                 <ul class="list-sidebar flex flex-col items-center justify-evenly">
-                    <li><a class="text-green-500" href="">Home</a></li>
-                    <li><a class="text-green-500" href="">Su Di Me</a></li>
-                    <li><a class="text-green-500" href="">Progetti</a></li>
-                    <li><a class="text-green-500" href="">Contatti</a></li>
+                    <li><a class="text-green-500 active" href="">Home</a></li>
+                    <li><a class="text-green-500" href="#about">Su Di Me</a></li>
+                    <li><a class="text-green-500" href="#project">Progetti</a></li>
+                    <li><a class="text-green-500" href="#contact">Contatti</a></li>
                 </ul>
             </div>
         </nav>
@@ -56,13 +56,13 @@
         <div class="invisible"></div>
         <section>
             <div id="home" class="jumbo">
-                <div class="container bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center">
+                <div class="container bg-gradient-to-r from-blue-700 to-blue-800 flex items-center justify-center">
                     <div class="content-jumbo flex flex-col items-center ">
                         <h1 class="welcome">
-                            < WELCOME >
+                            > WELCOME <
                         </h1>
                         <h2 class="me">Sono Walter, <br> uno Jr. Web Developer.</h2>
-                        <a class="cta " href="#prject">Progetti</a>
+                        <a class="cta " href="#project">Progetti</a>
                     </div>
 
                 </div>
@@ -73,7 +73,7 @@
                 <div class="container bg-gradient-to-r from-green-800 to-green-500 ">
                     <div class="content-about">
                         <h1 class="aboutme">
-                            < SU DI ME >
+                            > SU DI ME <
                         </h1>
                         <div class="content-me flex items-center ">
                             <div class="left ">
@@ -100,6 +100,171 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="project">
+            <!-- component -->
+
+            <div class=" container grid place-items-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300 p-5">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-5">> Progetti <</h1>
+            <section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- CARD 1 -->
+                <div class="bg-blue-700 shadow-lg rounded p-3">
+                <a target="_blank" href="https://wvwall.github.io/vue-boolzapp/" class="group relative flex flex-col items-center">
+                    <img class="w-full md:w-72 block rounded" src="./assets/img/WalltsApp.png" alt="" />
+                    <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                    
+                    </div>
+                </a>
+                <div class="p-5">
+                    <h3 class="text-white text-lg">WalltsApp</h3>
+                    <p class="text-gray-400">Whatsapp Web - VUEJS.</p>
+                </div>
+                </div>
+                <!-- END OF CARD 1 -->
+        
+                <!-- CARD 2 -->
+                <div class="bg-green-600 shadow-lg rounded p-3">
+                <a target="_blank" href="" class="group relative flex flex-col items-center">
+                    <img class="w-full md:w-72 block rounded" src="./assets/img/SpotifyWeb.png" alt="" />
+                    <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                    </div>
+                </a>
+                <div class="p-5">
+                    <h3 class="text-white text-lg">Wallfy</h3>
+                    <p class="text-gray-400">Spotify Web  HTML-CSS</p>
+                </div>
+                </div>
+                <!-- END OF CARD 2 -->
+        
+                <!-- CARD 3 -->
+                <div class="bg-blue-700 shadow-lg rounded p-3">
+                <a target="_blank" href="https://wvwall.github.io/vue-slider/" class="group relative flex flex-col items-center">
+                    <img class="w-full md:w-72 block rounded" src="./assets/img/VueSlider.png" alt="" />
+                    <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                    
+                    </div>
+                </a>
+                <div class="p-5">
+                    <h3 class="text-white text-lg">Instawall</h3>
+                    <p class="text-gray-400">Slider Instagram - VUEJS</p>
+                </div>
+                </div>
+                <!-- END OF CARD 3 -->
+                <!-- CARD 4 -->
+                <div class="bg-green-600 shadow-lg rounded p-3">
+                    <a target="_blank" href="https://wvwall.github.io/vue-boolflix/" class="group relative flex flex-col items-center">
+                        <img class="w-full md:w-72 block rounded" src="./assets/img/Wallflix.png" alt="" />
+                        <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                        
+                        </div>
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-white text-lg">Wallflix</h3>
+                        <p class="text-gray-400">Netflix VUEJS-API</p>
+                    </div>
+                    </div>
+                    <!-- END OF CARD 4 -->
+                    <!-- CARD 5 -->
+                <div class="bg-blue-700 shadow-lg rounded p-3">
+                    <a target="_blank" href="https://wvwall.github.io/vue-dischi/" class="group relative flex flex-col items-center">
+                        <img class="w-full md:w-72 block rounded" src="./assets/img/vue-dischi.png" alt="" />
+                        <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                        
+                        </div>
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-white text-lg">Vue-Dischi</h3>
+                        <p class="text-gray-400">Albums  VUEJS-API</p>
+                    </div>
+                    </div>
+                    <!-- END OF CARD 5 -->
+                    <!-- CARD 6-->
+                <div class="bg-green-600 shadow-lg rounded p-3">
+                    <a target="_blank" href="https://wvwall.github.io/proj-html-vuejs/" class="group relative flex flex-col items-center">
+                        <img class="w-full md:w-72 block rounded" src="./assets/img/NexGen.png" alt="" />
+                        <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                        
+                        </div>
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-white text-lg">Sass-Project</h3>
+                        <p class="text-gray-400">NexGen - SASS</p>
+                    </div>
+                    </div>
+                    <!-- END OF CARD 6 -->
+                     <!-- CARD 7-->
+                    <div class="bg-blue-700 shadow-lg rounded p-3">
+                        <a target="_blank" href="https://github.com/wvwall/htmlcss-hubspot" class="group relative flex flex-col items-center">
+                            <img class="w-full md:w-72 block rounded" src="./assets/img/HubSpot.png" alt="" />
+                            <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                            
+                            </div>
+                        </a>
+                        <div class="p-5">
+                            <h3 class="text-white text-lg">Hubspot</h3>
+                            <p class="text-gray-400">Homepage  HTML-CSS</p>
+                        </div>
+                        </div>
+                        <!-- END OF CARD 7 -->
+                         <!-- CARD 8-->
+                        <div class="bg-green-600 shadow-lg rounded p-3">
+                            <a target="_blank" href="https://github.com/wvwall/html-css-digitalocean" class="group relative flex flex-col items-center">
+                                <img class="w-full md:w-72 block rounded" src="./assets/img/DigitalOcean.png" alt="" />
+                                <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                                
+                                </div>
+                            </a>
+                            <div class="p-5">
+                                <h3 class="text-white text-lg">Digital-Ocean</h3>
+                                <p class="text-gray-400">Homepage HTML-CSS</p>
+                            </div>
+                            </div>
+                            <!-- END OF CARD 8 -->
+                             <!-- CARD 9-->
+                            <div class="bg-blue-700 shadow-lg rounded p-3">
+                                <a target="_blank" href=" https://github.com/wvwall/laravel-comics"  class="group relative flex flex-col items-center">
+                                    <img class="w-full md:w-72 block rounded" src="./assets/img/DC.png" alt="" />
+                                    <div class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                                    
+                                    </div>
+                                </a>
+                                <div class="p-5">
+                                    <h3 class="text-white text-lg">DC-comics</h3>
+                                    <p class="text-gray-400">Comicpage - LARAVEL-API</p>
+                                </div>
+                                </div>
+                                <!-- END OF CARD 9 -->
+                        </section>
+                </div>
+        </section>
+        <section id="contact" class="contact">  
+            <div class="container">
+                <div class="content-contact flex flex-col items-center">
+                    <h1 class="contactme text-green-500">> Contatti < </h1>
+                    <div class="contatts flex  ">
+                        <div class="left flex justify-center items-center">
+                            <ul>
+                                <li><i class="fab fa-linkedin-in"></i> www.linkedin.com/in/walter-velardo</li>
+                                <li><i class="fas fa-at"></i> waltervelardo@gmail.com</li>
+                                <li><i class="fab fa-github"></i> github.com/wvwall</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Torino</li>
+
+                            </ul>
+                        </div>
+                        <div class="right flex flex-col items-center">
+                            <div class="content-contacme flex justify-center">
+                                <img class="me" src="./assets/img/me.jpg" alt="">
+                            </div>
+                            <div class="icons-contact flex justify-around">
+                                <div class="icon-contact"><a target="_blank" href="https://www.linkedin.com/in/walter-velardo/"><i class="fab fa-linkedin-in"></i></a></div>
+                                <div class="icon-contact"><a target="_blank" href="https://github.com/wvwall"><i class="fab fa-github"></i></a></div>
+                                <div class="icon-contact"><a target="_blank" href="https://www.instagram.com/wvwall/"><i class="fab fa-instagram"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Portfolio by <a target="_blank" href="https://github.com/wvwall">@wvwall</a></span>
 
                 </div>
             </div>
