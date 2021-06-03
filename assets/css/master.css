@@ -319,6 +319,12 @@ main .contact .container .content-contact .contatts .right .content-contacme .me
   width: 200px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  main .contact .container .content-contact .contatts .right .content-contacme .me {
+    width: 150px;
+    height: 150px;
+  }
+}
 main .contact .container .content-contact .contatts .right .icons-contact {
   width: 300px;
   font-size: 50px;

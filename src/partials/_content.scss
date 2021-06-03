@@ -196,6 +196,11 @@ main {
                             .me {
                                 width: 200px;
                                 border-radius: 50%;
+                                @media screen and (max-width: 768px) {
+                                    width: 150px;
+                                    height: 150px;
+                                  }
+                                
                             }
                         }
                         .icons-contact {
