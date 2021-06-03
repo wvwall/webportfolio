@@ -10,7 +10,7 @@ main {
 
         .container {
             height: calc(100vh - 70px);
-            border-top: 4px solid #10b981;
+            
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
             .content-jumbo {
@@ -26,7 +26,7 @@ main {
                     font-size: 4rem;
                     font-weight: 400;
                     @media screen and (max-width: 768px) {
-                        font-size: 2rem;
+                        font-size: 1.6rem;
                     }
                 }
                 .cta {
@@ -53,9 +53,8 @@ main {
         
         .container {
            height: auto;
-           border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
             border-bottom: 4px solid #3b82f6;
+            border-top: 4px solid #fff;
             .content-about {
                 
                 .aboutme {
@@ -126,6 +125,8 @@ main {
         background-color: rgba(39, 39, 39,0.95);
         .container {
             padding-bottom: 100px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
             h1 {
                 margin-bottom: 100px;
                 padding-top: 50px;
