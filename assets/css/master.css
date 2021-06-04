@@ -6,7 +6,7 @@
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -29,13 +29,14 @@ a:hover.cta {
   width: 100%;
 }
 .navbar .container {
-  height: 70px;
+  height: 60px;
   position: relative;
 }
 .navbar .container .name {
   font-weight: 600;
   font-size: 1.8rem;
   margin-left: 30px;
+  cursor: default;
 }
 @media screen and (max-width: 768px) {
   .navbar .container .name {
@@ -44,7 +45,7 @@ a:hover.cta {
 }
 .navbar .container .initials {
   display: none;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -88,7 +89,7 @@ a:hover.cta {
   display: none;
   position: absolute;
   right: 0;
-  top: 70px;
+  top: 60px;
   width: 80%;
   height: 100vh;
   text-transform: uppercase;
@@ -107,20 +108,21 @@ a:hover.cta {
 
 main .invisible {
   width: 100%;
-  height: 70px;
+  height: 60px;
 }
 main .jumbo {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   color: #ebe7e7;
   background-color: rgba(39, 39, 39, 0.95);
 }
 main .jumbo .container {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 main .jumbo .container .content-jumbo {
   text-align: center;
+  cursor: default;
 }
 main .jumbo .container .content-jumbo .welcome {
   font-size: 6rem;
@@ -144,20 +146,21 @@ main .jumbo .container .content-jumbo .cta {
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 5px;
-  border: 2px solid #10b981;
+  border: 2px solid #272727;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
-  background-color: #272727;
-}
-main .jumbo .container .content-jumbo .cta:hover {
   background-color: #10b981;
-  color: #000;
-  border: 2px solid #272727;
+}
+main .jumbo .container .content-jumbo .cta:active {
+  background-color: #272727;
+  border: 2px solid #10b981;
+  color: #fff;
 }
 main .about {
   height: 100%;
   background-color: rgba(39, 39, 39, 0.95);
+  cursor: default;
 }
 main .about .container {
   height: auto;
@@ -237,6 +240,7 @@ main .project .container {
   padding-bottom: 100px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  cursor: default;
 }
 main .project .container h1 {
   margin-bottom: 100px;
