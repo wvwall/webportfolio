@@ -40,4 +40,8 @@ a:hover {
     &:hover {
         opacity: 0.8;
     }
+    &:active {
+        background-color: #323232;
+        color: #fff;
+    }
 }

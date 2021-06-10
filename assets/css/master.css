@@ -42,6 +42,10 @@ a:hover.show {
 .show:hover {
   opacity: 0.8;
 }
+.show:active {
+  background-color: #323232;
+  color: #fff;
+}
 
 .navbar {
   background-color: rgba(39, 39, 39, 0.95);
@@ -141,14 +145,15 @@ main .jumbo .container {
   height: calc(100vh - 60px);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding-bottom: 40px;
 }
 main .jumbo .container .content-jumbo {
   text-align: start;
   cursor: default;
 }
 main .jumbo .container .content-jumbo .welcome {
-  font-size: 5rem;
-  font-weight: 700;
+  font-size: 6rem;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .welcome {
@@ -321,25 +326,26 @@ main .project .container h1 {
     font-size: 2.3rem;
   }
 }
-main .project .container h3 {
+main .project .container .p-5 h3 {
   text-transform: uppercase;
   color: #ebe7e7;
   font-weight: 600;
 }
-main .project .container p {
-  color: #ddd5d5;
-  font-weight: 500;
+@media screen and (max-width: 768px) {
+  main .project .container .p-5 {
+    flex-direction: column;
+  }
 }
 
 .contact {
   background-color: rgba(39, 39, 39, 0.95);
 }
 .contact .container .content-contact {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .contact .container .content-contact .contactme {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 50px;
   font-size: 3.5rem;
   font-weight: 700;
 }
