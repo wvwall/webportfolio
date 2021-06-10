@@ -20,6 +20,28 @@ a:hover {
 a:hover.cta {
   text-decoration: none;
 }
+a:hover.show {
+  text-decoration: none;
+}
+
+.show {
+  padding: 8px 8px;
+  background-color: #fff;
+  color: #323232;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #323232;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+.show:hover {
+  opacity: 0.8;
+}
 
 .navbar {
   background-color: rgba(39, 39, 39, 0.95);
@@ -45,7 +67,7 @@ a:hover.cta {
 }
 .navbar .container .initials {
   display: none;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -117,15 +139,15 @@ main .jumbo {
 }
 main .jumbo .container {
   height: calc(100vh - 60px);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 main .jumbo .container .content-jumbo {
-  text-align: center;
+  text-align: start;
   cursor: default;
 }
 main .jumbo .container .content-jumbo .welcome {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
@@ -135,26 +157,72 @@ main .jumbo .container .content-jumbo .welcome {
 }
 main .jumbo .container .content-jumbo .me {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .me {
     font-size: 1.6rem;
   }
 }
-main .jumbo .container .content-jumbo .cta {
+main .jumbo .container .content-jumbo .buttons {
+  width: 35%;
+}
+@media screen and (max-width: 768px) {
+  main .jumbo .container .content-jumbo .buttons {
+    width: 100%;
+  }
+}
+main .jumbo .container .content-jumbo .buttons .cta {
+  text-align: center;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 5px;
-  border: 2px solid #272727;
+  border: 2px solid #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
   background-color: #10b981;
 }
-main .jumbo .container .content-jumbo .cta:active {
+main .jumbo .container .content-jumbo .buttons .cta .fa-eye {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .jumbo .container .content-jumbo .buttons .cta:hover {
+  opacity: 0.9;
+}
+main .jumbo .container .content-jumbo .buttons .cta:active {
   background-color: #272727;
   border: 2px solid #10b981;
+  color: #fff;
+}
+main .jumbo .container .content-jumbo .buttons .cv {
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  background-color: #E34F4F;
+}
+main .jumbo .container .content-jumbo .buttons .cv .fa-download {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .jumbo .container .content-jumbo .buttons .cv:hover {
+  opacity: 0.9;
+}
+main .jumbo .container .content-jumbo .buttons .cv:active {
+  background-color: #fff;
+  border: 2px solid #E34F4F;
   color: #fff;
 }
 main .about {
@@ -169,7 +237,7 @@ main .about .container {
 }
 main .about .container .content-about .aboutme {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: #ebe7e7;
   padding-top: 70px;
@@ -238,15 +306,14 @@ main .project {
 }
 main .project .container {
   padding-bottom: 100px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   cursor: default;
 }
 main .project .container h1 {
   margin-bottom: 100px;
   padding-top: 50px;
-  font-size: 5rem;
-  text-transform: uppercase;
+  font-size: 3.5rem;
   color: #2255D3;
 }
 @media screen and (max-width: 768px) {
@@ -263,89 +330,100 @@ main .project .container p {
   color: #ddd5d5;
   font-weight: 500;
 }
-main .contact {
+
+.contact {
   background-color: rgba(39, 39, 39, 0.95);
 }
-main .contact .container .content-contact {
+.contact .container .content-contact {
   padding-bottom: 50px;
 }
-main .contact .container .content-contact .contactme {
+.contact .container .content-contact .contactme {
   text-align: center;
   padding-top: 70px;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  main .contact .container .content-contact .contactme {
+  .contact .container .content-contact .contactme {
     font-size: 2.3rem;
   }
 }
-main .contact .container .content-contact .contatts {
+.contact .container .content-contact .contatts {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  main .contact .container .content-contact .contatts {
+  .contact .container .content-contact .contatts {
     display: flex;
     flex-direction: column;
   }
 }
-main .contact .container .content-contact .contatts .left {
+.contact .container .content-contact .contatts .left {
   width: 50%;
   font-size: 1.5rem;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  main .contact .container .content-contact .contatts .left {
+  .contact .container .content-contact .contatts .left {
     width: 100%;
     font-size: 1rem;
     margin-top: 40px;
   }
 }
-main .contact .container .content-contact .contatts .left li {
+.contact .container .content-contact .contatts .left li {
   opacity: 0.8;
   line-height: 3.5rem;
 }
-main .contact .container .content-contact .contatts .left li:hover {
+.contact .container .content-contact .contatts .left li i {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+@media screen and (max-width: 768px) {
+  .contact .container .content-contact .contatts .left li i {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+}
+.contact .container .content-contact .contatts .left li:hover {
   opacity: 1;
 }
-main .contact .container .content-contact .contatts .right {
+.contact .container .content-contact .contatts .right {
   width: 50%;
 }
 @media screen and (max-width: 768px) {
-  main .contact .container .content-contact .contatts .right {
+  .contact .container .content-contact .contatts .right {
     width: 100%;
   }
 }
-main .contact .container .content-contact .contatts .right .content-contacme {
+.contact .container .content-contact .contatts .right .content-contacme {
   margin-top: 50px;
 }
-main .contact .container .content-contact .contatts .right .content-contacme .me {
+.contact .container .content-contact .contatts .right .content-contacme .me {
   width: 200px;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-  main .contact .container .content-contact .contatts .right .content-contacme .me {
+  .contact .container .content-contact .contatts .right .content-contacme .me {
     width: 150px;
     height: 150px;
   }
 }
-main .contact .container .content-contact .contatts .right .icons-contact {
+.contact .container .content-contact .contatts .right .icons-contact {
   width: 300px;
   font-size: 50px;
   margin-top: 70px;
 }
-main .contact .container .content-contact .contatts .right .icons-contact .icon-contact {
+.contact .container .content-contact .contatts .right .icons-contact .icon-contact {
   color: #fff;
   opacity: 0.8;
 }
-main .contact .container .content-contact .contatts .right .icons-contact .icon-contact:hover {
+.contact .container .content-contact .contatts .right .icons-contact .icon-contact:hover {
   opacity: 1;
 }
-main .contact .container .content-contact span {
+.contact .container .content-contact span {
   color: #fff;
   font-weight: 500;
   margin-top: 40px;
 }
-main .contact .container .content-contact span a {
+.contact .container .content-contact span a {
   color: #2255D3;
 }

@@ -17,5 +17,27 @@ a:hover {
     &.cta {
         text-decoration: none;
     }
+    &.show {
+        text-decoration: none;
+    }
+    
 }
 
+.show {
+    padding: 8px 8px;
+    background-color: #fff;
+    color: #323232;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #323232;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    text-align: center; 
+    &:hover {
+        opacity: 0.8;
+    }
+}
