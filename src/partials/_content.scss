@@ -1,15 +1,15 @@
 main {
     .invisible {
         width: 100%;
-        height: 60px;
+        height: 70px;
     }
     .jumbo {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 70px);
         color: rgb(235, 231, 231);
         background-color: rgba(39, 39, 39,0.95);
         
         .container {
-            height: calc(100vh - 60px);
+            height: calc(100vh - 70px);
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             padding-bottom: 40px;
