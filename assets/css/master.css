@@ -27,11 +27,11 @@ a:hover.show {
 .show {
   padding: 8px 8px;
   background-color: #fff;
-  color: #323232;
+  color: #fff;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px solid #323232;
+  border: 1px solid #fff;
   font-size: 0.8rem;
   border-radius: 4px;
   margin-top: 10px;
@@ -48,8 +48,7 @@ a:hover.show {
 }
 
 .navbar {
-  background-color: rgba(39, 39, 39, 0.95);
-  /* box-shadow: 0px 5px #10b981; */
+  background-color: #323232;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -77,6 +76,7 @@ a:hover.show {
 @media screen and (max-width: 768px) {
   .navbar .container .initials {
     display: block;
+    margin-left: 10px;
   }
 }
 .navbar .container .list-nav {
@@ -152,7 +152,7 @@ main .jumbo .container .content-jumbo {
   cursor: default;
 }
 main .jumbo .container .content-jumbo .welcome {
-  font-size: 6rem;
+  font-size: 5.8rem;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -161,7 +161,7 @@ main .jumbo .container .content-jumbo .welcome {
   }
 }
 main .jumbo .container .content-jumbo .me {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -183,7 +183,7 @@ main .jumbo .container .content-jumbo .buttons .cta {
   margin-top: 20px;
   border-radius: 5px;
   border: 2px solid #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
@@ -209,7 +209,7 @@ main .jumbo .container .content-jumbo .buttons .cv {
   margin-top: 20px;
   border-radius: 5px;
   border: 2px solid #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
@@ -237,8 +237,8 @@ main .about {
 }
 main .about .container {
   height: auto;
-  border-bottom: 4px solid #3b82f6;
-  border-top: 4px solid #fff;
+  border-bottom: 3px solid #3b82f6;
+  border-top: 3px solid #fff;
 }
 main .about .container .content-about .aboutme {
   text-align: center;
@@ -329,7 +329,8 @@ main .project .container h1 {
 main .project .container .p-5 h3 {
   text-transform: uppercase;
   color: #ebe7e7;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
   main .project .container .p-5 {
