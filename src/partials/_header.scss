@@ -1,13 +1,13 @@
 .navbar {
     background-color: rgba(50, 50, 50, 1);
-    
+
     z-index: 1;
     position: fixed;
     width: 100%;
     .container {
         height: 70px;
         position: relative;
-        
+
         .name {
             font-weight: 600;
             font-size: 1.8rem;
@@ -30,7 +30,6 @@
 
         .list-nav {
             width: 45%;
-            
             font-weight: 500;
             @media screen and (max-width: 768px) {
                 display: none;
@@ -62,7 +61,7 @@
         display: none;
         position: absolute;
         right: 0;
-        top: 60px;
+        top: 70px;
         width: 80%;
         height: 100vh;
         text-transform: uppercase;

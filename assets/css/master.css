@@ -114,7 +114,7 @@ a:hover.show {
   display: none;
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 70px;
   width: 80%;
   height: 100vh;
   text-transform: uppercase;
@@ -213,7 +213,7 @@ main .jumbo .container .content-jumbo .buttons .cv {
   font-weight: 500;
   text-decoration: none;
   position: relative;
-  background-color: #E34F4F;
+  background-color: #e34f4f;
 }
 main .jumbo .container .content-jumbo .buttons .cv .fa-download {
   position: absolute;
@@ -226,7 +226,7 @@ main .jumbo .container .content-jumbo .buttons .cv:hover {
 }
 main .jumbo .container .content-jumbo .buttons .cv:active {
   background-color: #fff;
-  border: 2px solid #E34F4F;
+  border: 2px solid #e34f4f;
   color: #fff;
 }
 main .about {
@@ -318,7 +318,7 @@ main .project .container h1 {
   margin-bottom: 100px;
   padding-top: 50px;
   font-size: 3.5rem;
-  color: #2255D3;
+  color: #2255d3;
 }
 @media screen and (max-width: 768px) {
   main .project .container h1 {
@@ -431,5 +431,5 @@ main .project .container .p-5 h3 {
   margin-top: 40px;
 }
 .contact .container .content-contact span a {
-  color: #1273DE;
+  color: #1273de;
 }

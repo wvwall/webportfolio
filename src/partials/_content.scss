@@ -6,8 +6,8 @@ main {
     .jumbo {
         height: calc(100vh - 70px);
         color: rgb(235, 231, 231);
-        background-color: rgba(39, 39, 39,0.95);
-        
+        background-color: rgba(39, 39, 39, 0.95);
+
         .container {
             height: calc(100vh - 70px);
             border-top-left-radius: 5px;
@@ -16,7 +16,7 @@ main {
             .content-jumbo {
                 text-align: start;
                 cursor: default;
-                
+
                 .welcome {
                     font-size: 5.8rem;
                     font-weight: 600;
@@ -51,7 +51,7 @@ main {
                             position: absolute;
                             left: 15%;
                             top: 50%;
-                            transform: translate(-50%,-50%);
+                            transform: translate(-50%, -50%);
                         }
                         &:hover {
                             opacity: 0.9;
@@ -60,7 +60,6 @@ main {
                             background-color: #272727;
                             border: 2px solid #10b981;
                             color: #fff;
-                            
                         }
                     }
                     .cv {
@@ -74,38 +73,35 @@ main {
                         font-weight: 500;
                         text-decoration: none;
                         position: relative;
-                        background-color: #E34F4F;
+                        background-color: #e34f4f;
                         .fa-download {
                             position: absolute;
                             left: 15%;
                             top: 50%;
-                            transform: translate(-50%,-50%);
+                            transform: translate(-50%, -50%);
                         }
                         &:hover {
                             opacity: 0.9;
                         }
                         &:active {
                             background-color: #fff;
-                            border: 2px solid #E34F4F;
+                            border: 2px solid #e34f4f;
                             color: #fff;
-                            
                         }
                     }
                 }
-                
-            } 
+            }
         }
     }
     .about {
-       height: 100%;
-        background-color: rgba(39, 39, 39,0.95);
+        height: 100%;
+        background-color: rgba(39, 39, 39, 0.95);
         cursor: default;
         .container {
-           height: auto;
+            height: auto;
             border-bottom: 3px solid #3b82f6;
             border-top: 3px solid #fff;
             .content-about {
-                
                 .aboutme {
                     text-align: center;
                     font-size: 4rem;
@@ -128,8 +124,8 @@ main {
                         font-weight: 500;
                         width: 50%;
                         font-size: 1.2rem;
-                        color:rgb(235, 231, 231) ;
-                        
+                        color: rgb(235, 231, 231);
+
                         margin-top: 100px;
                         margin-bottom: 180px;
                         line-height: 2rem;
@@ -142,7 +138,7 @@ main {
                         font-weight: 500;
                         width: 50%;
                         font-size: 1.1rem;
-                        color:rgb(235, 231, 231) ;
+                        color: rgb(235, 231, 231);
                         margin-top: 100px;
                         margin-bottom: 180px;
                         line-height: 2rem;
@@ -156,7 +152,7 @@ main {
                                 height: 50px;
                                 margin: 20px;
                                 i {
-                                   cursor: pointer;
+                                    cursor: pointer;
                                     font-size: 50px;
                                     opacity: 0.9;
                                     &:hover {
@@ -171,7 +167,7 @@ main {
         }
     }
     .project {
-        background-color: rgba(39, 39, 39,0.95);
+        background-color: rgba(39, 39, 39, 0.95);
         .container {
             padding-bottom: 100px;
             border-bottom-left-radius: 5px;
@@ -181,8 +177,8 @@ main {
                 margin-bottom: 100px;
                 padding-top: 50px;
                 font-size: 3.5rem;
-                
-                color: #2255D3;
+
+                color: #2255d3;
                 @media screen and (max-width: 768px) {
                     font-size: 2.3rem;
                 }
@@ -190,18 +186,14 @@ main {
             .p-5 {
                 h3 {
                     text-transform: uppercase;
-                    color:rgb(235, 231, 231) ;
+                    color: rgb(235, 231, 231);
                     font-weight: 500;
                     font-size: 1rem;
                 }
                 @media screen and (max-width: 768px) {
-                   flex-direction: column;
+                    flex-direction: column;
                 }
             }
-            
-            
         }
-        
     }
-
 }
