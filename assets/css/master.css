@@ -6,12 +6,12 @@
 }
 
 .container {
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
 }
 
 .active {
-  color: #fff;
+  color: #0eab78;
 }
 
 a:hover {
@@ -117,7 +117,6 @@ a:hover.show {
   top: 70px;
   width: 80%;
   height: 100vh;
-  text-transform: uppercase;
   background-color: rgba(39, 39, 39, 0.95);
   z-index: 1;
   font-size: 1.4rem;
