@@ -11,7 +11,7 @@
 }
 .container.hed {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .container.hed {
@@ -373,7 +373,7 @@ main .project .container .p-5 h3 {
 }
 .contact .container .content-contact .contatts .left {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -388,7 +388,7 @@ main .project .container .p-5 h3 {
   line-height: 3.5rem;
 }
 .contact .container .content-contact .contatts .left li i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 8px;
 }
 @media screen and (max-width: 768px) {
