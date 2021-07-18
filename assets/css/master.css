@@ -6,12 +6,12 @@
 }
 
 .container {
-  width: 99%;
+  width: 100%;
   margin: 0 auto;
 }
 .container.hed {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   .container.hed {
@@ -57,7 +57,7 @@ a:hover.show {
 }
 
 .navbar {
-  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.95);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -158,6 +158,11 @@ main .jumbo .container .content-jumbo {
   text-align: start;
   cursor: default;
 }
+@media screen and (max-width: 768px) {
+  main .jumbo .container .content-jumbo {
+    flex-direction: column;
+  }
+}
 main .jumbo .container .content-jumbo .welcome {
   font-size: 5.8rem;
   font-weight: 600;
@@ -168,7 +173,7 @@ main .jumbo .container .content-jumbo .welcome {
   }
 }
 main .jumbo .container .content-jumbo .me {
-  font-size: 3.8rem;
+  font-size: 4.5rem;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -178,10 +183,12 @@ main .jumbo .container .content-jumbo .me {
 }
 main .jumbo .container .content-jumbo .buttons {
   width: 35%;
+  height: 200px;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .buttons {
     width: 100%;
+    height: auto;
   }
 }
 main .jumbo .container .content-jumbo .buttons .cta {
@@ -241,11 +248,11 @@ main .about {
   height: 100%;
   background-color: rgba(39, 39, 39, 0.95);
   cursor: default;
+  border-bottom: 3px solid #3b82f6;
+  border-top: 3px solid #fff;
 }
 main .about .container {
   height: auto;
-  border-bottom: 3px solid #3b82f6;
-  border-top: 3px solid #fff;
 }
 main .about .container .content-about .aboutme {
   text-align: center;
@@ -324,7 +331,7 @@ main .project .container {
 }
 main .project .container h1 {
   margin-bottom: 100px;
-  padding-top: 50px;
+  padding-top: 45px;
   font-size: 3.5rem;
   color: #2255d3;
 }
