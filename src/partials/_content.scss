@@ -7,7 +7,7 @@ main {
   .jumbo {
     height: calc(100vh - 70px);
     color: rgb(235, 231, 231);
-    background-color: rgba(39, 39, 39, 0.95);
+    background-color: #5271ff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -37,10 +37,15 @@ main {
           }
         }
         .me {
-          font-size: 4.5rem;
+          font-size: 5rem;
           font-weight: 600;
+          h5 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-left: 10px;
+          }
           @media screen and (max-width: 768px) {
-            font-size: 1.6rem;
+            font-size: 2rem;
           }
         }
         .buttons {
@@ -52,21 +57,28 @@ main {
             height: auto;
           }
           .cta {
+            width: 250px;
             text-align: center;
             padding: 10px 30px;
             margin-top: 20px;
-            border-radius: 5px;
-            border: 2px solid #fff;
+            border-radius: 8px;
+            border: 3px solid #272727;
             font-size: 1rem;
             text-transform: uppercase;
             font-weight: 500;
             position: relative;
-            background-color: #10b981;
+            background-color: #ffffff;
+            color: #272727;
+            @media screen and (max-width: 768px) {
+              width: auto;
+            }
             .fa-eye {
               position: absolute;
               left: 15%;
               top: 50%;
               transform: translate(-50%, -50%);
+              color: #11ad86;
+              font-size: 1.2rem;
             }
             &:hover {
               opacity: 0.9;
@@ -78,22 +90,29 @@ main {
             }
           }
           .cv {
+            width: 250px;
             text-align: center;
             padding: 10px 30px;
             margin-top: 20px;
-            border-radius: 5px;
-            border: 2px solid #fff;
+            border-radius: 8px;
+            border: 3px solid #272727;
             font-size: 1rem;
             text-transform: uppercase;
             font-weight: 500;
             text-decoration: none;
             position: relative;
-            background-color: #e34f4f;
+            background-color: #ffffff;
+            color: #272727;
+            @media screen and (max-width: 768px) {
+              width: auto;
+            }
             .fa-download {
               position: absolute;
               left: 15%;
               top: 50%;
               transform: translate(-50%, -50%);
+              color: tomato;
+              font-size: 1.2rem;
             }
             &:hover {
               opacity: 0.9;
@@ -110,19 +129,18 @@ main {
   }
   .about {
     height: 100%;
-    background-color: rgba(39, 39, 39, 0.95);
+    background-color: #ffffff;
     cursor: default;
-    border-bottom: 3px solid #3b82f6;
-    border-top: 3px solid #fff;
+    border-bottom: 2px solid #3b82f6;
+
     .container {
       height: auto;
-
       .content-about {
         .aboutme {
           text-align: center;
           font-size: 4rem;
           font-weight: 700;
-          color: rgb(235, 231, 231);
+          color: #5271ff;
           padding-top: 70px;
           @media screen and (max-width: 768px) {
             font-size: 2.3rem;
@@ -138,10 +156,9 @@ main {
           }
           .left {
             font-weight: 500;
-            width: 50%;
+            width: 60%;
             font-size: 1.2rem;
-            color: rgb(235, 231, 231);
-
+            color: #5271ff;
             margin-top: 100px;
             margin-bottom: 180px;
             line-height: 2rem;
@@ -152,9 +169,9 @@ main {
           }
           .right {
             font-weight: 500;
-            width: 50%;
+            width: 40%;
             font-size: 1.1rem;
-            color: rgb(235, 231, 231);
+            color: #5271ff;
             margin-top: 100px;
             margin-bottom: 180px;
             line-height: 2rem;
@@ -183,7 +200,7 @@ main {
     }
   }
   .project {
-    background-color: rgba(39, 39, 39, 0.95);
+    background-color: #ffffff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-bottom: 100px;
@@ -195,8 +212,7 @@ main {
         margin-bottom: 100px;
         padding-top: 45px;
         font-size: 3.5rem;
-
-        color: #2255d3;
+        color: #5271ff;
         @media screen and (max-width: 768px) {
           font-size: 2.3rem;
         }
