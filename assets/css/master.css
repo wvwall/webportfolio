@@ -123,13 +123,13 @@ a:hover.show {
 }
 .navbar .container .hamburger_menu .line {
   width: 25px;
-  height: 5px;
+  height: 3px;
   margin-top: 4px;
   background-color: #ffffff;
 }
 .navbar .container .hamburger_menu .lineb {
   width: 25px;
-  height: 5px;
+  height: 3px;
   margin-top: 4px;
   background-color: #ffffff;
 }
@@ -138,7 +138,7 @@ a:hover.show {
   position: absolute;
   right: 0;
   top: 70px;
-  width: 75%;
+  width: 70%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 1;
