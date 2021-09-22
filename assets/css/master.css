@@ -68,6 +68,10 @@ a:hover.show {
   background-color: #5271ff;
 }
 
+.small {
+  font-size: 0.8rem;
+}
+
 .navbar {
   background-color: #5271ff;
   border-bottom-left-radius: 10px;
@@ -95,6 +99,10 @@ a:hover.show {
   display: none;
   font-size: 2rem;
   font-weight: 600;
+}
+.navbar .container .initials a {
+  text-decoration: none;
+  color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .navbar .container .initials {
@@ -311,7 +319,7 @@ main .about .container .content-about .aboutme {
   font-size: 4rem;
   font-weight: 700;
   color: #5271ff;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 @media screen and (max-width: 768px) {
   main .about .container .content-about .aboutme {
@@ -385,6 +393,7 @@ main .project .container {
 }
 main .project .container h1 {
   margin-bottom: 100px;
+  margin-top: 50px;
   padding-top: 45px;
   font-size: 3.5rem;
   color: #5271ff;
