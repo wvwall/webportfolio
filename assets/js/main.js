@@ -1,8 +1,7 @@
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
-  $('a[href^="#site-main"]').addClass("active");
-  $("a").on("click", function (e) {
+  $("li a").on("click", function (e) {
     e.preventDefault();
     //  $(document).off("scroll");
     var athis = this;
