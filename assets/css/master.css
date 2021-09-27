@@ -120,8 +120,8 @@ a:hover.show {
   }
 }
 .navbar .container .list-nav li {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-color: #ffffff;
   border-radius: 50%;
   border: 2px solid #000;
@@ -132,9 +132,14 @@ a:hover.show {
   -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
 }
+.navbar .container .list-nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar .container .list-nav li i {
   color: #000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   opacity: 0.8;
 }
 .navbar .container .list-nav li i:hover {
@@ -184,8 +189,8 @@ a:hover.show {
   color: #5271ff;
 }
 .navbar .sidebar .list-sidebar li {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-color: #ffffff;
   border-radius: 50%;
   border: 2px solid #000;
@@ -200,9 +205,14 @@ a:hover.show {
   position: relative;
   right: 50px;
 }
+.navbar .sidebar .list-sidebar li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar .sidebar .list-sidebar li i {
   color: #000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   opacity: 0.8;
 }
 .navbar .sidebar .list-sidebar li i:hover {
