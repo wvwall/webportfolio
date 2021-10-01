@@ -32,6 +32,10 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>wvwall | waltervelardo.it</title>
     <link rel="stylesheet" href="./assets/css/master.css" />
     <link
@@ -49,24 +53,10 @@
           <ul class="list-nav flex justify-around">
             <li class="home">
               <a class="text-gray-50 active" href="#home"
-                ><svg
-                  viewBox="0 0 512 512"
-                  width="24"
-                  height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
+                ><i class="fas fa-home"></i>
               </a>
             </li>
-            <li>
-              <a class="text-gray-50 small" href="#about"
-                ><i class="fas fa-handshake"></i
-              ></a>
-            </li>
+
             <li>
               <a class="text-gray-50 small" href="#project"
                 ><i class="fas fa-code"></i
@@ -74,7 +64,7 @@
             </li>
             <li>
               <a class="text-gray-50 small" href="#contact"
-                ><i class="fas fa-id-card"></i
+                ><i class="far fa-id-card"></i
               ></a>
             </li>
           </ul>
@@ -84,55 +74,21 @@
             <div class="line"></div>
           </div>
         </div>
-        <div class="sidebar">
+        <div class="sidebar animate__animated animate__headShake">
           <ul class="list-sidebar flex flex-col items-center justify-evenly">
             <li class="home">
-              <a class="active" href="#home"
-                ><svg
-                  viewBox="0 0 512 512"
-                  width="24"
-                  height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </a>
+              <a class="active" href="#home"><i class="fas fa-home"></i> </a>
             </li>
+
             <li class="left">
-              <a class="small" href="#about"
-                ><i class="fas fa-handshake"></i
-              ></a>
-            </li>
-            <li class="left">
-              <a class="small" href="#project"
-                ><i class="fas fa-laptop-code"></i
-              ></a>
+              <a class="small" href="#project"><i class="fas fa-code"></i></a>
             </li>
             <li>
               <a class="small" href="#contact"
-                ><i class="fas fa-id-card"></i
+                ><i class="far fa-id-card"></i
               ></a>
             </li>
           </ul>
-          <!-- <div class="icons-contact flex justify-around mt-10">
-            <div class="icon-contact">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/walter-velardo/"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-            <div class="icon-contact">
-              <a target="_blank" href="https://github.com/wvwall"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-             <div class="icon-contact"><a target="_blank" href="https://www.instagram.com/wvwall/"><i
-                                  class="fab fa-instagram"></i></a></div> 
-          </div> -->
         </div>
       </nav>
     </header>
@@ -143,13 +99,20 @@
         <div class="jumbo">
           <div class="container flex items-center justify-center">
             <div class="content-jumbo flex">
-              <div class="me">
+              <div class="me animate__animated animate__slideInLeft">
                 <h2>Ciao, sono Walter.</h2>
                 <h5>Jr. Web Developer.</h5>
               </div>
 
-              <div class="buttons flex flex-col justify-end">
-                <a class="cta" href="#project"
+              <div
+                class="
+                  buttons
+                  flex flex-col
+                  justify-end
+                  animate__animated animate__slideInRight
+                "
+              >
+                <a class="cta" href="#project_"
                   ><i class="fas fa-eye"></i> Progetti</a
                 >
                 <a
@@ -164,10 +127,10 @@
         </div>
       </section>
       <section>
-        <div id="about" class="about">
+        <div id="project" class="about">
           <div class="container">
             <div class="content-about">
-              <h1 class="aboutme">Su di me</h1>
+              <h1 class="aboutme">Progetti</h1>
               <div class="content-me flex items-center">
                 <div class="left">
                   <p>
@@ -197,7 +160,9 @@
                     <div class="icon"><i class="fab fa-php"></i></div>
                     <div class="icon"><i class="fab fa-laravel"></i></div>
                     <div class="icon"><i class="fab fa-npm"></i></div>
-                    <div class="icon"><i class="fab fa-node-js"></i></div>
+                    <div id="project_" class="icon">
+                      <i class="fab fa-node-js"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -208,23 +173,8 @@
       <section class="project">
         <!-- component -->
 
-        <div
-          id="project"
-          class="container grid place-items-center min-h-screen p-5"
-        >
-          <h1
-            class="
-              text-4xl
-              sm:text-5xl
-              md:text-7xl
-              font-bold
-              text-gray-200
-              mb-5
-            "
-          >
-            Progetti
-          </h1>
-          <section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="container grid place-items-center min-h-screen p-5">
+          <section class="grid grid-cols- sm:grid-cols-3 gap-4">
             <!-- CARD 1 -->
             <div class="shadow-lg rounded p-2">
               <a
@@ -269,7 +219,49 @@
               </div>
             </div>
             <!-- END OF CARD 1 -->
-
+            <div class="shadow-lg rounded p-2">
+              <a
+                target="_blank"
+                href="https://wvwall.github.io/pexels_images/"
+                class="group relative flex flex-col items-center"
+              >
+                <img
+                  class="w-full md:w-72 block rounded"
+                  src="./assets/img/pexels.png"
+                  alt=""
+                />
+                <div
+                  class="
+                    absolute
+                    bg-black
+                    rounded
+                    bg-opacity-0
+                    group-hover:bg-opacity-60
+                    w-full
+                    h-full
+                    top-0
+                    flex
+                    items-center
+                    group-hover:opacity-100
+                    transition
+                    justify-evenly
+                  "
+                ></div>
+              </a>
+              <div class="p-5 flex flex-col items-center justify-around">
+                <h3 class="text-white text-lg">
+                  Pexels Api ~ <i class="fab fa-js-square"></i>
+                  <i class="fab fa-vuejs"></i>
+                </h3>
+                <a
+                  target="_blank"
+                  href="https://wvwall.github.io/pexels_images/"
+                  class="show text-gray-50"
+                  >demo</a
+                >
+              </div>
+            </div>
+            <!-- END OF CARD 1 -->
             <!-- CARD 2 -->
             <div class="shadow-lg rounded p-2">
               <a
@@ -492,51 +484,7 @@
                 >
               </div>
             </div>
-            <!-- CARD 7-->
-            <div class="shadow-lg rounded p-2">
-              <a
-                target="_blank"
-                href="https://wvwall.github.io/proj-html-vuejs/"
-                class="group relative flex flex-col items-center"
-              >
-                <img
-                  class="w-full md:w-72 block rounded"
-                  src="./assets/img/NexGen.png"
-                  alt=""
-                />
-                <div
-                  class="
-                    absolute
-                    bg-black
-                    rounded
-                    bg-opacity-0
-                    group-hover:bg-opacity-60
-                    w-full
-                    h-full
-                    top-0
-                    flex
-                    items-center
-                    group-hover:opacity-100
-                    transition
-                    justify-evenly
-                  "
-                ></div>
-              </a>
-              <div class="p-5 flex flex-col items-center justify-around">
-                <h3 class="text-white text-lg">
-                  Sass Project ~ <i class="fab fa-html5"></i>
-                  <i class="fab fa-sass"></i>
-                </h3>
-                <a
-                  target="_blank"
-                  href="https://wvwall.github.io/proj-html-vuejs/"
-                  class="show text-gray-50"
-                  >demo</a
-                >
-              </div>
-            </div>
 
-            <!-- END OF CARD 7 -->
             <!-- CARD 9-->
             <div class="shadow-lg rounded p-2">
               <a
