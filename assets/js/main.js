@@ -6,6 +6,9 @@ $(document).ready(function () {
   $("a").click(function () {
     $(".sidebar").removeClass("open");
   });
+  $("a").click(function () {
+    $(".hamburger_menu").removeClass("open");
+  });
   $('.hamburger_menu').click(function(){
     $(this).toggleClass('open');
   });
