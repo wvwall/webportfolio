@@ -161,12 +161,7 @@ a:hover.show {
   height: 4px;
   margin-top: 4px;
   background-color: #ffffff;
-}
-.navbar .container .hamburger_menu .lineb {
-  width: 25px;
-  height: 3px;
-  margin-top: 4px;
-  background-color: #ffffff;
+  border-radius: 5px;
 }
 .navbar .sidebar {
   display: none;
@@ -219,6 +214,44 @@ a:hover.show {
 .navbar .sidebar .list-sidebar li i:active {
   opacity: 1;
   color: tomato;
+}
+
+.hamburger_menu.open div:nth-child(1), .hamburger_menu.open div:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+.hamburger_menu.open div:nth-child(2), .hamburger_menu.open div:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+.hamburger_menu.open div:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+.hamburger_menu.open div:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+.hamburger_menu.open div:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.hamburger_menu.open div:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.hamburger_menu.open div:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+.hamburger_menu.open div:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
 }
 
 main {
