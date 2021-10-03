@@ -11,6 +11,7 @@ $(document).ready(function () {
     $(".active").removeClass("active");
     $(this).addClass("active");
   });
+
   $(".fa-info-circle ").click(function () {
     $(".text_card").toggleClass("info");
   });
