@@ -97,7 +97,7 @@ a:hover.show {
 }
 .navbar .container .initials {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .navbar .container .initials a {
@@ -216,12 +216,14 @@ a:hover.show {
   color: tomato;
 }
 
-.hamburger_menu.open div:nth-child(1), .hamburger_menu.open div:nth-child(6) {
+.hamburger_menu.open div:nth-child(1),
+.hamburger_menu.open div:nth-child(6) {
   transform: rotate(45deg);
 }
 
-.hamburger_menu.open div:nth-child(2), .hamburger_menu.open div:nth-child(5) {
-  transform: rotate(-45deg);
+.hamburger_menu.open div:nth-child(2),
+.hamburger_menu.open div:nth-child(5) {
+  transform: rotate(45deg);
 }
 
 .hamburger_menu.open div:nth-child(1) {
