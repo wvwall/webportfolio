@@ -361,9 +361,9 @@ main .jumbo .container .content-jumbo .buttons .cta:active {
   color: #fff;
 }
 main .jumbo .container .content-jumbo .buttons .cv {
-  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
   width: 250px;
   text-align: center;
   padding: 10px 30px;
@@ -431,7 +431,7 @@ main .about .container .content-about .content-me {
 }
 main .about .container .content-about .content-me .left {
   font-weight: 500;
-  width: 58%;
+  width: 60%;
   font-size: 1.3rem;
   color: #5271ff;
   margin-top: 100px;
@@ -465,9 +465,9 @@ main .about .container .content-about .content-me .right .icons .icon {
   margin: 20px;
 }
 main .about .container .content-about .content-me .right .icons .icon i {
-  cursor: pointer;
+  cursor: default;
   font-size: 50px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 main .about .container .content-about .content-me .right .icons .icon i:hover {
   opacity: 1;

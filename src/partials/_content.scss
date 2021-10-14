@@ -89,9 +89,9 @@ main {
             }
           }
           .cv {
-            box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
             width: 250px;
             text-align: center;
             padding: 10px 30px;
@@ -157,12 +157,13 @@ main {
           }
           .left {
             font-weight: 500;
-            width: 58%;
+            width: 60%;
             font-size: 1.3rem;
             color: #5271ff;
             margin-top: 100px;
             margin-bottom: 180px;
             line-height: 2rem;
+
             @media screen and (max-width: 768px) {
               width: 100%;
               margin-bottom: 50px;
@@ -186,9 +187,9 @@ main {
                 height: 50px;
                 margin: 20px;
                 i {
-                  cursor: pointer;
+                  cursor: default;
                   font-size: 50px;
-                  opacity: 0.9;
+                  opacity: 0.8;
                   &:hover {
                     opacity: 1;
                   }
