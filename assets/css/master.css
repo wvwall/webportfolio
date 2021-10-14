@@ -314,6 +314,7 @@ main .jumbo .container .content-jumbo .me h5 {
 main .jumbo .container .content-jumbo .buttons {
   width: 35%;
   height: 220px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .buttons {
