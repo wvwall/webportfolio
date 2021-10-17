@@ -50,7 +50,7 @@ a:hover.show {
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
-  border: 3px solid #323232;
+  border: 2px solid #323232;
   font-size: 0.8rem;
   border-radius: 8px;
   margin-top: 10px;
@@ -309,6 +309,7 @@ main .jumbo .container .content-jumbo .me h5 {
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .me {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
 main .jumbo .container .content-jumbo .buttons {
@@ -319,7 +320,8 @@ main .jumbo .container .content-jumbo .buttons {
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .buttons {
     margin-top: 20px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: auto;
   }
 }
@@ -332,9 +334,9 @@ main .jumbo .container .content-jumbo .buttons .cta {
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 3px solid #272727;
+  border: 2px solid #272727;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   background-color: #ffffff;
   color: #272727;
@@ -369,9 +371,9 @@ main .jumbo .container .content-jumbo .buttons .cv {
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 3px solid #272727;
+  border: 2px solid #272727;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   position: relative;
   background-color: #ffffff;
