@@ -1,87 +1,94 @@
-.contact {
-  background-color: #5271ff;
-  padding-bottom: 10px;
-
-  .container {
-    .content-contact {
-      padding-bottom: 20px;
-      .contactme {
-        text-align: center;
-        padding-top: 50px;
-        font-size: 3.5rem;
-        font-weight: 600;
-        color: #fff;
-        @media screen and (max-width: 768px) {
-          font-size: 2.3rem;
-        }
-      }
-      .contatts {
-        width: 100%;
-        @media screen and (max-width: 768px) {
-          display: flex;
-          flex-direction: column;
-        }
-        .left {
-          width: 50%;
+footer {
+  background: rgb(255, 102, 99);
+  background: linear-gradient(
+    280deg,
+    rgba(255, 102, 99, 1) 0%,
+    rgba(82, 113, 255, 1) 35%
+  );
+  .contact {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    .container {
+      .content-contact {
+        padding-bottom: 20px;
+        .contactme {
+          text-align: center;
+          padding-top: 50px;
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: $dark;
           @media screen and (max-width: 768px) {
-            width: 100%;
-            font-size: 1rem;
-            margin-top: 40px;
-          }
-          font-size: 1.2rem;
-          color: #fff;
-          li {
-            opacity: 0.8;
-            line-height: 3.5rem;
-            i {
-              font-size: 1.5rem;
-              margin-right: 8px;
-              @media screen and (max-width: 768px) {
-                font-size: 1rem;
-                margin-right: 0;
-              }
-            }
-          }
-          li:hover {
-            opacity: 1;
+            font-size: 2.3rem;
           }
         }
-        .right {
-          width: 50%;
+        .contatts {
+          width: 100%;
           @media screen and (max-width: 768px) {
-            width: 100%;
+            display: flex;
+            flex-direction: column;
           }
-          .content-contacme {
-            margin-top: 50px;
-            .me {
-              width: 200px;
-              border-radius: 50%;
-              @media screen and (max-width: 768px) {
-                width: 150px;
-                height: 150px;
-              }
+          .left {
+            width: 50%;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              font-size: 1rem;
+              margin-top: 40px;
             }
-          }
-          .icons-contact {
-            width: 300px;
-            font-size: 50px;
-            margin-top: 70px;
-            .icon-contact {
-              color: #fff;
+            font-size: 1.2rem;
+            color: $dark;
+            li {
               opacity: 0.8;
-              &:hover {
-                opacity: 1;
+              line-height: 3.5rem;
+              i {
+                font-size: 1.5rem;
+                margin-right: 8px;
+                @media screen and (max-width: 768px) {
+                  font-size: 1rem;
+                  margin-right: 0;
+                }
+              }
+            }
+            li:hover {
+              opacity: 1;
+            }
+          }
+          .right {
+            width: 50%;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+            .content-contacme {
+              margin-top: 50px;
+              .me {
+                width: 200px;
+                border-radius: 50%;
+                @media screen and (max-width: 768px) {
+                  width: 150px;
+                  height: 150px;
+                }
+              }
+            }
+            .icons-contact {
+              width: 300px;
+              font-size: 50px;
+              margin-top: 70px;
+              .icon-contact {
+                color: $dark;
+                opacity: 0.9;
+                &:hover {
+                  opacity: 1;
+                }
               }
             }
           }
         }
-      }
-      span {
-        color: #fff;
-        font-weight: 500;
-        margin-top: 40px;
-        a {
-          color: #0eab78;
+        span {
+          color: $dark;
+          font-weight: 500;
+          margin-top: 40px;
+          a {
+            color: #fff;
+          }
         }
       }
     }

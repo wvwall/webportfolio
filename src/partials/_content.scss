@@ -1,5 +1,10 @@
 main {
-  background-color: rgba(50, 50, 50, 0.95);
+  background: rgb(255, 102, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 102, 99, 1) 0%,
+    rgba(82, 113, 255, 1) 35%
+  );
   .invisible {
     width: 100%;
     height: 80px;
@@ -7,10 +12,15 @@ main {
   .jumbo {
     height: calc(100vh - 80px);
     color: rgb(235, 231, 231);
-    background-color: #5271ff;
+    background: rgb(255, 102, 99);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 102, 99, 1) 0%,
+      rgba(82, 113, 255, 1) 35%
+    );
+
     .container {
       height: calc(100vh - 80px);
-
       padding-bottom: 40px;
       .content-jumbo {
         text-align: start;
@@ -35,6 +45,7 @@ main {
         .me {
           font-size: 5.5rem;
           font-weight: 600;
+          color: $dark;
           h5 {
             font-size: 1.2rem;
             font-weight: 400;
@@ -56,20 +67,24 @@ main {
             height: auto;
           }
           .cta {
-            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            width: 250px;
+            border: 2px solid black;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            width: 240px;
             text-align: center;
             padding: 10px 30px;
             margin-top: 20px;
-            border-radius: 8px;
-            border: 2px solid #272727;
+            border-radius: 10px;
             font-size: 1rem;
             font-weight: 500;
             position: relative;
-            background-color: #ffffff;
-            color: #272727;
+            background-color: $dark;
+            color: #fff;
+            text-transform: initial;
             @media screen and (max-width: 768px) {
               width: auto;
             }
@@ -91,21 +106,25 @@ main {
             }
           }
           .cv {
-            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-            width: 250px;
+            border: 2px solid black;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            width: 240px;
             text-align: center;
             padding: 10px 30px;
             margin-top: 20px;
-            border-radius: 8px;
-            border: 2px solid #272727;
+            border-radius: 10px;
             font-size: 1rem;
             font-weight: 500;
             text-decoration: none;
             position: relative;
-            background-color: #ffffff;
-            color: #272727;
+            background-color: $dark;
+            color: #fff;
+            text-transform: initial;
             @media screen and (max-width: 768px) {
               width: auto;
             }
@@ -132,7 +151,7 @@ main {
   }
   .about {
     height: 100%;
-    background-color: #ffffff;
+    background-color: $dark;
     cursor: default;
 
     .container {
@@ -142,7 +161,7 @@ main {
           text-align: center;
           font-size: 4rem;
           font-weight: 600;
-          color: #5271ff;
+          color: $secondary-color;
           padding-top: 100px;
           @media screen and (max-width: 768px) {
             font-size: 2.3rem;
@@ -160,7 +179,7 @@ main {
             font-weight: 500;
             width: 60%;
             font-size: 1.3rem;
-            color: #5271ff;
+            color: #fff;
             margin-top: 100px;
             margin-bottom: 180px;
             line-height: 2rem;
@@ -174,7 +193,7 @@ main {
             font-weight: 500;
             width: 40%;
             font-size: 1.1rem;
-            color: #5271ff;
+            color: $primary-color;
             margin-top: 100px;
             margin-bottom: 180px;
             line-height: 2rem;
@@ -191,6 +210,7 @@ main {
                   cursor: default;
                   font-size: 50px;
                   opacity: 0.8;
+                  color: #fff;
                   &:hover {
                     opacity: 1;
                   }
@@ -203,7 +223,7 @@ main {
     }
   }
   .project {
-    background-color: #ffffff;
+    background-color: $dark;
     padding-bottom: 100px;
     .container {
       cursor: default;
@@ -212,7 +232,7 @@ main {
         padding-top: 40px;
         font-size: 3.5rem;
         font-weight: 500;
-        color: #5271ff;
+        color: $primary-color;
         @media screen and (max-width: 768px) {
           font-size: 2.3rem;
         }
