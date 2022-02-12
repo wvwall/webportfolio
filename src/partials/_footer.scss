@@ -1,7 +1,7 @@
 footer {
   background: rgb(255, 102, 99);
-  background: linear-gradient(
-    280deg,
+  background: radial-gradient(
+    circle,
     rgba(255, 102, 99, 1) 0%,
     rgba(82, 113, 255, 1) 35%
   );

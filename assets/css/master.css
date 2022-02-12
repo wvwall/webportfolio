@@ -282,7 +282,7 @@ a:hover.show {
 
 main {
   background: #ff6663;
-  background: linear-gradient(90deg, #ff6663 0%, #5271ff 35%);
+  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
 }
 main .invisible {
   width: 100%;
@@ -292,7 +292,7 @@ main .jumbo {
   height: calc(100vh - 80px);
   color: #ebe7e7;
   background: #ff6663;
-  background: linear-gradient(90deg, #ff6663 0%, #5271ff 35%);
+  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
 }
 main .jumbo .container {
   height: calc(100vh - 80px);
@@ -537,7 +537,7 @@ main .project .container .p-5 h3 {
 
 footer {
   background: #ff6663;
-  background: linear-gradient(280deg, #ff6663 0%, #5271ff 35%);
+  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
 }
 footer .contact {
   padding-bottom: 10px;
