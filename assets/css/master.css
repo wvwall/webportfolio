@@ -10,7 +10,6 @@ html {
 }
 
 .invisible_ {
-  background-color: #5271ff;
   width: 100%;
   height: 70px;
 }
@@ -68,6 +67,10 @@ a:hover.show {
 
 .shadow-lg {
   background-color: #5271ff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .small {
@@ -75,7 +78,7 @@ a:hover.show {
 }
 
 .navbar {
-  background-color: #5271ff;
+  background-color: transparent;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -99,6 +102,12 @@ a:hover.show {
   display: none;
   font-size: 1.5rem;
   font-weight: 600;
+  background-color: #5271ff;
+  padding: 2px 5px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .navbar .container .initials a {
   text-decoration: none;
@@ -120,48 +129,62 @@ a:hover.show {
   }
 }
 .navbar .container .list-nav li {
-  width: 45px;
-  height: 45px;
+  padding: 6px 10px;
   background-color: #ffffff;
-  border-radius: 45%;
-  border: 2px solid #000;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  border: 2px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .navbar .container .list-nav li a {
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+}
+.navbar .container .list-nav li a:hover {
+  text-decoration: none;
 }
 .navbar .container .list-nav li i {
+  margin-right: 5px;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   opacity: 0.8;
 }
-.navbar .container .list-nav li i:active {
-  opacity: 1;
-  color: tomato;
+.navbar .container .list-nav li i:hover {
+  text-decoration: none;
 }
 .navbar .container .hamburger_menu {
   margin-right: 10px;
   display: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 25px;
+  width: 25px;
+  background-color: #ff6663;
 }
 @media screen and (max-width: 768px) {
   .navbar .container .hamburger_menu {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     cursor: pointer;
+    border-radius: 5px;
   }
 }
 .navbar .container .hamburger_menu .line {
-  width: 25px;
-  height: 4px;
-  margin-top: 4px;
+  width: 20px;
+  height: 5px;
   background-color: #ffffff;
   border-radius: 5px;
+  border: 1px solid #000;
 }
 .navbar .sidebar {
   display: none;
@@ -185,17 +208,18 @@ a:hover.show {
   color: #5271ff;
 }
 .navbar .sidebar .list-sidebar li {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background-color: #ffffff;
-  border-radius: 45%;
-  border: 2px solid #000;
+  border-radius: 15px;
+  border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .navbar .sidebar .list-sidebar li.left {
   position: relative;
@@ -208,7 +232,7 @@ a:hover.show {
 }
 .navbar .sidebar .list-sidebar li i {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: 0.8;
 }
 .navbar .sidebar .list-sidebar li i:active {
@@ -257,7 +281,8 @@ a:hover.show {
 }
 
 main {
-  background-color: rgba(50, 50, 50, 0.95);
+  background: #ff6663;
+  background: linear-gradient(90deg, #ff6663 0%, #5271ff 35%);
 }
 main .invisible {
   width: 100%;
@@ -266,7 +291,8 @@ main .invisible {
 main .jumbo {
   height: calc(100vh - 80px);
   color: #ebe7e7;
-  background-color: #5271ff;
+  background: #ff6663;
+  background: linear-gradient(90deg, #ff6663 0%, #5271ff 35%);
 }
 main .jumbo .container {
   height: calc(100vh - 80px);
@@ -300,6 +326,7 @@ main .jumbo .container .content-jumbo .welcome {
 main .jumbo .container .content-jumbo .me {
   font-size: 5.5rem;
   font-weight: 600;
+  color: #3c4042;
 }
 main .jumbo .container .content-jumbo .me h5 {
   font-size: 1.2rem;
@@ -326,20 +353,21 @@ main .jumbo .container .content-jumbo .buttons {
   }
 }
 main .jumbo .container .content-jumbo .buttons .cta {
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  width: 250px;
+  border: 2px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 240px;
   text-align: center;
   padding: 10px 30px;
   margin-top: 20px;
-  border-radius: 8px;
-  border: 2px solid #272727;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
   position: relative;
-  background-color: #ffffff;
-  color: #272727;
+  background-color: #3c4042;
+  color: #fff;
+  text-transform: initial;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .buttons .cta {
@@ -363,21 +391,22 @@ main .jumbo .container .content-jumbo .buttons .cta:active {
   color: #fff;
 }
 main .jumbo .container .content-jumbo .buttons .cv {
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  width: 250px;
+  border: 2px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 240px;
   text-align: center;
   padding: 10px 30px;
   margin-top: 20px;
-  border-radius: 8px;
-  border: 2px solid #272727;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   position: relative;
-  background-color: #ffffff;
-  color: #272727;
+  background-color: #3c4042;
+  color: #fff;
+  text-transform: initial;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .buttons .cv {
@@ -402,7 +431,7 @@ main .jumbo .container .content-jumbo .buttons .cv:active {
 }
 main .about {
   height: 100%;
-  background-color: #ffffff;
+  background-color: #3c4042;
   cursor: default;
 }
 main .about .container {
@@ -412,7 +441,7 @@ main .about .container .content-about .aboutme {
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
-  color: #5271ff;
+  color: #ff6663;
   padding-top: 100px;
 }
 @media screen and (max-width: 768px) {
@@ -435,7 +464,7 @@ main .about .container .content-about .content-me .left {
   font-weight: 500;
   width: 60%;
   font-size: 1.3rem;
-  color: #5271ff;
+  color: #fff;
   margin-top: 100px;
   margin-bottom: 180px;
   line-height: 2rem;
@@ -470,12 +499,13 @@ main .about .container .content-about .content-me .right .icons .icon i {
   cursor: default;
   font-size: 50px;
   opacity: 0.8;
+  color: #fff;
 }
 main .about .container .content-about .content-me .right .icons .icon i:hover {
   opacity: 1;
 }
 main .project {
-  background-color: #ffffff;
+  background-color: #3c4042;
   padding-bottom: 100px;
 }
 main .project .container {
@@ -505,101 +535,105 @@ main .project .container .p-5 h3 {
   }
 }
 
-.contact {
-  background-color: #5271ff;
-  padding-bottom: 10px;
+footer {
+  background: #ff6663;
+  background: linear-gradient(280deg, #ff6663 0%, #5271ff 35%);
 }
-.contact .container .content-contact {
+footer .contact {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+footer .contact .container .content-contact {
   padding-bottom: 20px;
 }
-.contact .container .content-contact .contactme {
+footer .contact .container .content-contact .contactme {
   text-align: center;
   padding-top: 50px;
   font-size: 3.5rem;
   font-weight: 600;
-  color: #fff;
+  color: #3c4042;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contactme {
+  footer .contact .container .content-contact .contactme {
     font-size: 2.3rem;
   }
 }
-.contact .container .content-contact .contatts {
+footer .contact .container .content-contact .contatts {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contatts {
+  footer .contact .container .content-contact .contatts {
     display: flex;
     flex-direction: column;
   }
 }
-.contact .container .content-contact .contatts .left {
+footer .contact .container .content-contact .contatts .left {
   width: 50%;
   font-size: 1.2rem;
-  color: #fff;
+  color: #3c4042;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contatts .left {
+  footer .contact .container .content-contact .contatts .left {
     width: 100%;
     font-size: 1rem;
     margin-top: 40px;
   }
 }
-.contact .container .content-contact .contatts .left li {
+footer .contact .container .content-contact .contatts .left li {
   opacity: 0.8;
   line-height: 3.5rem;
 }
-.contact .container .content-contact .contatts .left li i {
+footer .contact .container .content-contact .contatts .left li i {
   font-size: 1.5rem;
   margin-right: 8px;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contatts .left li i {
+  footer .contact .container .content-contact .contatts .left li i {
     font-size: 1rem;
     margin-right: 0;
   }
 }
-.contact .container .content-contact .contatts .left li:hover {
+footer .contact .container .content-contact .contatts .left li:hover {
   opacity: 1;
 }
-.contact .container .content-contact .contatts .right {
+footer .contact .container .content-contact .contatts .right {
   width: 50%;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contatts .right {
+  footer .contact .container .content-contact .contatts .right {
     width: 100%;
   }
 }
-.contact .container .content-contact .contatts .right .content-contacme {
+footer .contact .container .content-contact .contatts .right .content-contacme {
   margin-top: 50px;
 }
-.contact .container .content-contact .contatts .right .content-contacme .me {
+footer .contact .container .content-contact .contatts .right .content-contacme .me {
   width: 200px;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-  .contact .container .content-contact .contatts .right .content-contacme .me {
+  footer .contact .container .content-contact .contatts .right .content-contacme .me {
     width: 150px;
     height: 150px;
   }
 }
-.contact .container .content-contact .contatts .right .icons-contact {
+footer .contact .container .content-contact .contatts .right .icons-contact {
   width: 300px;
   font-size: 50px;
   margin-top: 70px;
 }
-.contact .container .content-contact .contatts .right .icons-contact .icon-contact {
-  color: #fff;
-  opacity: 0.8;
+footer .contact .container .content-contact .contatts .right .icons-contact .icon-contact {
+  color: #3c4042;
+  opacity: 0.9;
 }
-.contact .container .content-contact .contatts .right .icons-contact .icon-contact:hover {
+footer .contact .container .content-contact .contatts .right .icons-contact .icon-contact:hover {
   opacity: 1;
 }
-.contact .container .content-contact span {
-  color: #fff;
+footer .contact .container .content-contact span {
+  color: #3c4042;
   font-weight: 500;
   margin-top: 40px;
 }
-.contact .container .content-contact span a {
-  color: #0eab78;
+footer .contact .container .content-contact span a {
+  color: #fff;
 }

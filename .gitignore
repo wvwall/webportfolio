@@ -3,3 +3,4 @@ node_modules/
  .idea/prettier.xml/
  assets/.DS_Store/
  assets/img/.DS_Store/
+.DS_Store
