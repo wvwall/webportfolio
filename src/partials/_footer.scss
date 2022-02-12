@@ -1,10 +1,5 @@
 footer {
-  background: rgb(255, 102, 99);
-  background: radial-gradient(
-    circle,
-    rgba(255, 102, 99, 1) 0%,
-    rgba(82, 113, 255, 1) 35%
-  );
+  background: $primary-color;
   .contact {
     padding-bottom: 10px;
     padding-top: 20px;
@@ -16,7 +11,7 @@ footer {
           padding-top: 50px;
           font-size: 3.5rem;
           font-weight: 600;
-          color: $dark;
+          color: #fff;
           @media screen and (max-width: 768px) {
             font-size: 2.3rem;
           }
@@ -74,10 +69,7 @@ footer {
               margin-top: 70px;
               .icon-contact {
                 color: $dark;
-                opacity: 0.9;
-                &:hover {
-                  opacity: 1;
-                }
+                font-weight: 600;
               }
             }
           }
@@ -87,7 +79,7 @@ footer {
           font-weight: 500;
           margin-top: 40px;
           a {
-            color: #fff;
+            color: $secondary-color;
           }
         }
       }

@@ -73,6 +73,10 @@ a:hover.show {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.orange {
+  background-color: #ff6663;
+}
+
 .small {
   font-size: 0.8rem;
 }
@@ -281,8 +285,7 @@ a:hover.show {
 }
 
 main {
-  background: #ff6663;
-  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
+  background: #5271ff;
 }
 main .invisible {
   width: 100%;
@@ -291,8 +294,7 @@ main .invisible {
 main .jumbo {
   height: calc(100vh - 80px);
   color: #ebe7e7;
-  background: #ff6663;
-  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
+  background: #5271ff;
 }
 main .jumbo .container {
   height: calc(100vh - 80px);
@@ -536,8 +538,7 @@ main .project .container .p-5 h3 {
 }
 
 footer {
-  background: #ff6663;
-  background: radial-gradient(circle, #ff6663 0%, #5271ff 35%);
+  background: #5271ff;
 }
 footer .contact {
   padding-bottom: 10px;
@@ -551,7 +552,7 @@ footer .contact .container .content-contact .contactme {
   padding-top: 50px;
   font-size: 3.5rem;
   font-weight: 600;
-  color: #3c4042;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   footer .contact .container .content-contact .contactme {
@@ -624,10 +625,7 @@ footer .contact .container .content-contact .contatts .right .icons-contact {
 }
 footer .contact .container .content-contact .contatts .right .icons-contact .icon-contact {
   color: #3c4042;
-  opacity: 0.9;
-}
-footer .contact .container .content-contact .contatts .right .icons-contact .icon-contact:hover {
-  opacity: 1;
+  font-weight: 600;
 }
 footer .contact .container .content-contact span {
   color: #3c4042;
@@ -635,5 +633,5 @@ footer .contact .container .content-contact span {
   margin-top: 40px;
 }
 footer .contact .container .content-contact span a {
-  color: #fff;
+  color: #ff6663;
 }
