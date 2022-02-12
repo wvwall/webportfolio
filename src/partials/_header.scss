@@ -48,6 +48,7 @@
         display: none;
       }
       li {
+        text-transform: uppercase;
         padding: 6px 10px;
         background-color: #ffffff;
         border-radius: 10px;
@@ -66,7 +67,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 14px;
+          font-size: 12px;
           &:hover {
             text-decoration: none;
           }

@@ -40,6 +40,7 @@ main {
             font-size: 1.2rem;
             font-weight: 400;
             margin-left: 10px;
+            color: #fff;
           }
           @media screen and (max-width: 768px) {
             font-size: 2rem;
@@ -57,7 +58,7 @@ main {
             height: auto;
           }
           .cta {
-            border: 2px solid black;
+            border: 2px solid #10b981;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
               0 6px 6px rgba(0, 0, 0, 0.23);
             -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
@@ -96,7 +97,7 @@ main {
             }
           }
           .cv {
-            border: 2px solid black;
+            border: 2px solid $secondary-color;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
               0 6px 6px rgba(0, 0, 0, 0.23);
             -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),

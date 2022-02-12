@@ -133,6 +133,7 @@ a:hover.show {
   }
 }
 .navbar .container .list-nav li {
+  text-transform: uppercase;
   padding: 6px 10px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -149,7 +150,7 @@ a:hover.show {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 .navbar .container .list-nav li a:hover {
   text-decoration: none;
@@ -334,6 +335,7 @@ main .jumbo .container .content-jumbo .me h5 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-left: 10px;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   main .jumbo .container .content-jumbo .me {
@@ -355,7 +357,7 @@ main .jumbo .container .content-jumbo .buttons {
   }
 }
 main .jumbo .container .content-jumbo .buttons .cta {
-  border: 2px solid black;
+  border: 2px solid #10b981;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -393,7 +395,7 @@ main .jumbo .container .content-jumbo .buttons .cta:active {
   color: #fff;
 }
 main .jumbo .container .content-jumbo .buttons .cv {
-  border: 2px solid black;
+  border: 2px solid #ff6663;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -552,7 +554,7 @@ footer .contact .container .content-contact .contactme {
   padding-top: 50px;
   font-size: 3.5rem;
   font-weight: 600;
-  color: #fff;
+  color: #ff6663;
 }
 @media screen and (max-width: 768px) {
   footer .contact .container .content-contact .contactme {
@@ -571,7 +573,7 @@ footer .contact .container .content-contact .contatts {
 footer .contact .container .content-contact .contatts .left {
   width: 50%;
   font-size: 1.2rem;
-  color: #3c4042;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   footer .contact .container .content-contact .contatts .left {
@@ -624,7 +626,7 @@ footer .contact .container .content-contact .contatts .right .icons-contact {
   margin-top: 70px;
 }
 footer .contact .container .content-contact .contatts .right .icons-contact .icon-contact {
-  color: #3c4042;
+  color: #fff;
   font-weight: 600;
 }
 footer .contact .container .content-contact span {
